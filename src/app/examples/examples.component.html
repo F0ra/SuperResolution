@@ -1,0 +1,16 @@
+
+<h2>Two Images comparison:</h2><p>
+  Images are 4x upscaled, used bicubic interpolation on right,
+and <strong>SuperResolution</strong> on left.</p>
+<p>The <b><span id='triangleSlider'>triangle</span></b> slider must be pushed to compare two upscaled images:</p>
+  
+<button (click)='prev()'>Prev</button>
+<button (click)='next()' >Next</button>
+<div></div>
+<div class="image-slider">
+    <div>
+      <img id='left' src="" />
+      <div class="top-left"><strong>SuperResolution</strong></div>
+    </div>
+    <img id='right' src="" />
+</div>

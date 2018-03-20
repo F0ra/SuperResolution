@@ -1,0 +1,71 @@
+p {
+    font-size: 20px;
+    white-space: pre;
+}
+button {
+    background-color:#333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 15px;
+    /* margin: 15px; */
+    /* display: block;
+    float: left; */
+}
+.top-left {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    background-color: rgb(82, 14, 14);
+    background: steelblue;
+    font-size: 24px;
+    color: #2196F3;
+}
+
+/**
+ * Image slider with pure CSS
+ * Original version in http://demosthenes.info/blog/css
+ */
+
+ .image-slider {
+	position:relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+/* Could use a pseudo-element, but they’re currently
+   super buggy. See: http://dabblet.com/gist/ab432c3f6a8f672cd077 */
+.image-slider > div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 35px;
+	max-width: 100%;
+	overflow: hidden;
+    resize: horizontal;
+    border-right: 2px solid #2196F3;
+}
+
+/* Cross-browser resizer styling */
+.image-slider > div:before {
+	content: '';
+	position: absolute;
+	right: 0; bottom: 0;
+	width: 25px; height: 25px;
+	padding: 5px;
+	background: linear-gradient(-45deg, #2196F3 50%, transparent 0);
+	background-clip: content-box;
+	cursor: ew-resize;
+	-webkit-filter: drop-shadow(0 0 2px black);
+	filter: drop-shadow(0 0 2px black);
+}
+
+.image-slider img {
+	user-select: none;
+	max-width: 400px;
+}
+#triangleSlider {
+    color:  #2196F3;
+}
+
